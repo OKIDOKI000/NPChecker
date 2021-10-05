@@ -1,0 +1,35 @@
+<header>
+  <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark mt-3 mb-3">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">TOP</a>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+        <% if user_signed_in? %>
+          <li class="nav-item active">
+            <a class="nav-link" href="/products/index"><%= t('users.shared.header.products') %></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/users/edit"><%= t('users.shared.header.sign_in_user', name: current_user.name) %></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/users/sign_out"><%= t('users.shared.header.sign_out') %></a>
+          </li>
+        <% else %>
+          <li class="nav-item active">
+            <a class="nav-link" href="/users/sign_up"><%= t('users.shared.header.sign_up') %></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/users/sign_in"><%= t('users.shared.header.sign_in') %></a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+
+
+  

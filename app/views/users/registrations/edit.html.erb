@@ -1,0 +1,89 @@
+<div class="border border-primary-c">
+  <h2><%= t('.title', :resource => resource_class.model_name.human) %></h2>
+
+  <%= form_with(model: resource, scope: resource_name, url: registration_path(resource_name), html: { method: :put }, local: true) do |f| %>
+    <%= render "users/shared/error_messages", model: resource %>
+
+    <div class="form-group row">
+      <div class="col-sm-2 col-form-label"><%= t('.profile_image_file') %></div>
+      <div class="col-sm-5 border border-success">
+        <% if current_user.image_name == "default_image.jpg" %>
+          <%= image_tag "default_image.jpg", class: "d-block mx-auto img-fluid" %>
+        <% else %>
+          <%= image_tag "/user_images/#{current_user.image_name}", class: "d-block mx-auto img-fluid" %>
+        <% end %>     
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <%= f.label :image_data, t('.image_file_change'), class: "col-sm-2 col-form-label" %>
+      <div class="col-sm-5">
+        <%= f.file_field :image_data %>
+      </div>
+      <p class="help-block small"><%= t('.image_file_requirement') %></p>
+    </div>
+
+    <div class="form-group row">
+      <%= f.label :name, t('activerecord.attributes.user.name'), class: "col-sm-2 col-form-label" %>
+      <div class="col-sm-5">
+        <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "form-control border-dark" %>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <%= f.label :email, t('activerecord.attributes.user.email'), class: "col-sm-2 col-form-label" %>
+      <div class="col-sm-5">
+        <%= f.email_field :email, autocomplete: "email", class: "form-control border-dark" %>
+      </div>
+    </div>
+
+    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      <div>
+        <%= t('.currently_waiting_confirmation_for_email', :email => resource.unconfirmed_email) %>
+      </div>
+    <% end %>
+
+    <div class="form-group row">
+      <%= f.label :password, t('activerecord.attributes.user.password'), class: "col-sm-2 col-form-label" %>
+      <div class="col-sm-5">
+        <%= f.password_field :password, autocomplete: "new-password", class: "form-control border-dark" %>
+      </div>
+      <p class="help-block small">
+        <%= t('.leave_blank_if_you_don_t_want_to_change_it') %><br />
+        <%= t('infos.messages.password_complexity') %>
+      </p>
+    </div>
+
+    <div class="form-group row">
+      <%= f.label :password_confirmation, t('activerecord.attributes.user.password_confirmation'), class: "col-sm-2 col-form-label" %>
+      <div class="col-sm-5">
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control border-dark" %>
+      </div>
+      <p class="help-block small"><%= t('.leave_blank_if_you_don_t_want_to_change_it') %></p>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-sm-5">
+        <button type="submit" class="btn btn-primary btn-lg"><%= t('.update') %></button>
+      </div>
+    </div>
+
+  <% end %>
+</div>
+
+<div class="border border-primary-c">
+  <h3><%= t('.cancel_my_account') %></h3>
+  <%= button_to t('.cancel_my_account'), registration_path(resource_name), method: :delete, class: "btn btn-danger", data: {
+      title: "#{t('.are_you_sure_1')}",
+      confirm: "#{t('.are_you_sure_2')}",
+      verify: "delete",
+      verify_text: "#{t('.verify_text')}",
+      cancel: "#{t('.stop_deleting')}",
+      commit: "#{t('.delete_account')}"
+      } %>
+</div>
+
+<div class="mt-5">
+  <%= link_to t('users.shared.links.back'), :back, class: "btn btn-info" %>
+</div>
+
