@@ -43,7 +43,7 @@ ja:
       not_saved:
         one: "エラーが発生したため %{resource} は保存されませんでした。"
         other: "%{count} 件のエラーが発生したため %{resource} は保存されませんでした。"
-      password_not_complex: "が複雑性の要件を満たしていません。（長さ：8-70文字、半角大文字・小文字・数字を全て含む）"
+      password_not_complex: "が複雑性の要件を満たしていません（長さ：8-70文字、半角大文字・小文字・数字を全て含む）"
   infos:
     messages:
       password_complexity: "※要件　長さ：8-70文字、文字種：半角大文字・小文字・数字を全て含む"
@@ -114,8 +114,8 @@ ja:
     registrations:
       destroyed: "アカウントを削除しました。またのご利用をお待ちしています。"
       edit:
-        are_you_sure_1: "アカウント削除確認"
-        are_you_sure_2: "本当にアカウントを削除してよろしいですか？"
+        are_you_sure1: "アカウント削除確認"
+        are_you_sure2: "本当にアカウントを削除してよろしいですか？"
         cancel_my_account: "ユーザアカウント削除"
         currently_waiting_confirmation_for_email: "%{email} の確認待ち"
         delete_account: "削除"

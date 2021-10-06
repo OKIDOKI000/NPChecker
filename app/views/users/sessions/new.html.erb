@@ -1,7 +1,7 @@
 <div class="border border-primary-c">
   <h2><%= t('.sign_in') %></h2>
 
-  <%= form_with(model: resource, scope: resource_name, url: session_path(resource_name)) do |f| %>
+  <%= form_with(model: resource, scope: resource_name, url: session_path(resource_name), local: true) do |f| %>
     <%= render "users/shared/error_messages", model: resource %>
 
     <div class="form-group row">
