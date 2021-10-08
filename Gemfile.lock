@@ -109,6 +109,7 @@ GEM
       activesupport (>= 5.0)
     http-cookie (1.0.4)
       domain_name (~> 0.5)
+    http_accept_language (2.1.1)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     io-like (0.3.1)
@@ -267,6 +268,7 @@ DEPENDENCIES
   devise-bootstrap-views (~> 1.0)
   devise-i18n
   devise-i18n-views
+  http_accept_language
   jbuilder (~> 2.5)
   jquery-rails
   mechanize

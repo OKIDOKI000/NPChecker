@@ -44,14 +44,21 @@ en:
         one: "1 error prohibited this %{resource} from being saved"
         other: "%{count} errors prohibited this %{resource} from being saved"
       password_not_complex: "Complexity requirement not met. Length should be 8-70 characters and include 1 uppercase, 1 lowercase, and 1 digit"
+  home:
+    index:
+      title: "NPChecker - Top"
   infos:
     messages:
       password_complexity: "*Requirement Length: 8-70 characters, Character type: All uppercase and lowercase letters and numbers"
+  products:
+    index:
+      title: "NPChecker - Index of products"
   users:
     confirmations:
       confirmed: "Your email address has been successfully confirmed."
       new:
         resend_confirmation_instructions: "Resend confirmation instructions"
+        title: "NPChecker - Resend confirmation instructions"
       send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."
       send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes."
     failure:
@@ -103,9 +110,11 @@ en:
         change_your_password: "Change my password"
         confirm_new_password: "Confirm new password"
         new_password: "New password"
+        title: "NPChecker - Change password"
       new:
         forgot_your_password: "Forgot your password?"
         send_me_reset_password_instructions: "Send me reset password instructions"
+        title: "NPChecker - Reset password"
       no_token: "You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided."
       send_instructions: "You will receive an email with instructions on how to reset your password in a few minutes."
       send_paranoid_instructions: "If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes."
@@ -119,18 +128,20 @@ en:
         cancel_my_account: "Delete my account"
         currently_waiting_confirmation_for_email: "Currently waiting confirmation for email %{email}"
         delete_account: "Delete"
-        image_file_change: "Change image file"
+        image_file_change: "change image file"
         image_file_requirement: "*File size : Less than 100KB, Format : JPEG (JPG) or PNG"
         leave_blank_if_you_don_t_want_to_change_it: "*Leave blank if you don't want to change it"
-        profile_image_file: "Profile image file"
+        profile_image_file: "profile image file"
         stop_deleting: "Stop"
-        title: "%{resource}information editing"
+        p_title: "%{resource} information editing"
+        title: "NPChecker - Edit user"
         unhappy: "Unhappy?"
         update: "Update"
         verify_text: "If you want to delete your account, please type \"delete\"."
         we_need_your_current_password_to_confirm_your_changes: "Please enter your current password for the changes to take effect."
       new:
         sign_up: "Sign up"
+        title: "NPChecker - Sign up"
       signed_up: "Welcome! You have signed up successfully."
       signed_up_but_inactive: "You have signed up successfully. However, we could not sign you in because your account is not yet activated."
       signed_up_but_locked: "You have signed up successfully. However, we could not sign you in because your account is locked."
@@ -142,6 +153,7 @@ en:
       already_signed_out: "Signed out successfully."
       new:
         sign_in: "Sign in"
+        title: "NPChecker - Sign in"
       signed_in: "Signed in successfully."
       signed_out: "Signed out successfully."
     shared:
@@ -151,6 +163,7 @@ en:
         sign_in_user: "Sign in user: %{name}"
         sign_out: "Sign out"
         sign_up: "Sign up"
+        top: "TOP"
       links:
         back: "Back"
         didn_t_receive_confirmation_instructions: "If you did not receive your account confirmation email, click here."
@@ -163,6 +176,7 @@ en:
     unlocks:
       new:
         resend_unlock_instructions: "Resend unlock instructions"
+        title: "NPChecker - Unlock account"
       send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."
       send_paranoid_instructions: "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes."
       unlocked: "Your account has been unlocked successfully. Please sign in to continue."

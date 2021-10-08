@@ -36,6 +36,8 @@ gem 'jquery-rails'
 gem 'devise-bootstrap-views', '~> 1.0'
 # 削除確認gem
 gem 'data-confirm-modal'
+# Accept-Languageからのlocale変更を可能にする
+gem 'http_accept_language'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
