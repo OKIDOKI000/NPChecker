@@ -44,14 +44,21 @@ ja:
         one: "エラーが発生したため %{resource} は保存されませんでした。"
         other: "%{count} 件のエラーが発生したため %{resource} は保存されませんでした。"
       password_not_complex: "が複雑性の要件を満たしていません（長さ：8-70文字、半角大文字・小文字・数字を全て含む）"
+  home:
+    index:
+      title: "NPChecker－トップページ"
   infos:
     messages:
       password_complexity: "※要件　長さ：8-70文字、文字種：半角大文字・小文字・数字を全て含む"
+  products:
+    index:
+      title: "NPChecker－商品一覧"
   users:
     confirmations:
       confirmed: "メールアドレスが有効であることを確認できました。"
       new:
         resend_confirmation_instructions: "アカウント確認メール再送"
+        title: "NPChecker－アカウント確認メール再送"
       send_instructions: "アカウントの有効化について数分以内にメールでご連絡します。"
       send_paranoid_instructions: "メールアドレスが登録済みの場合、本人確認用のメールが数分以内に送信されます。"
     failure:
@@ -103,9 +110,11 @@ ja:
         change_your_password: "パスワードを変更"
         confirm_new_password: "確認用新しいパスワード"
         new_password: "新しいパスワード"
+        title: "NPChecker－パスワード変更"
       new:
         forgot_your_password: "パスワードを忘れましたか？"
         send_me_reset_password_instructions: "パスワードの再設定方法を送信する"
+        title: "NPChecker－パスワード再設定"
       no_token: "このページにはアクセスできません。パスワード再設定メールのリンクからアクセスされた場合には、URL をご確認ください。"
       send_instructions: "パスワードの再設定について数分以内にメールでご連絡します。"
       send_paranoid_instructions: "メールアドレスが登録済みの場合、パスワード再設定用のメールが数分以内に送信されます。"
@@ -121,16 +130,18 @@ ja:
         delete_account: "削除"
         image_file_change: "画像ファイル変更"
         image_file_requirement: "※ファイルサイズ：100KB未満、形式：JPEG(JPG)かPNG"
-        leave_blank_if_you_don_t_want_to_change_it: "※空欄のままなら変更しません"
+        leave_blank_if_you_don_t_want_to_change_it: "※空欄のままならば変更しません"
         profile_image_file: "プロフィール画像"
         stop_deleting: "中止"
-        title: "%{resource}情報編集"
+        p_title: "%{resource}情報編集"
+        title: "NPChecker－ユーザ情報編集"
         unhappy: "気に入りません"
         update: "更新"
         verify_text: "アカウント削除する場合は「delete」と入力してください"
         we_need_your_current_password_to_confirm_your_changes: "変更を反映するには現在のパスワードを入力してください"
       new:
         sign_up: "アカウント登録"
+        title: "NPChecker－アカウント登録"
       signed_up: "アカウント登録が完了しました。"
       signed_up_but_inactive: "ログインするためには、アカウントを有効化してください。"
       signed_up_but_locked: "アカウントがロックされているためログインできません。"
@@ -142,6 +153,7 @@ ja:
       already_signed_out: 既にログアウト済みです。
       new:
         sign_in: "ログイン"
+        title: "NPChecker－ログイン"
       signed_in: "ログインしました。"
       signed_out: "ログアウトしました。"
     shared:
@@ -151,6 +163,7 @@ ja:
         sign_in_user: "ログインユーザ：%{name}"
         sign_out: "ログアウト"
         sign_up: "アカウント登録"
+        top: "TOP"
       links:
         back: "戻る"
         didn_t_receive_confirmation_instructions: "アカウント確認のメールを受け取れなかった方はこちら"
@@ -163,6 +176,7 @@ ja:
     unlocks:
       new:
         resend_unlock_instructions: "アカウントのロック解除方法を再送する"
+        title: "NPChecker－アカウントロック解除"
       send_instructions: "アカウントのロック解除方法を数分以内にメールでご連絡します。"
       send_paranoid_instructions: "アカウントが見つかった場合、アカウントのロック解除方法を数分以内にメールでご連絡します。"
       unlocked: "アカウントをロック解除しました。"

@@ -48,9 +48,9 @@ class Users::SessionsController < Devise::SessionsController
     { scope: resource_name, recall: "#{controller_path}#new" }
   end
 
-  def translation_scope
-    'devise.sessions'
-  end
+  #def translation_scope
+  #  'devise.sessions'
+  #end
 
   private
 
@@ -81,7 +81,7 @@ class Users::SessionsController < Devise::SessionsController
     end
   end
 
-  
+  # 当初の記述
   # before_action :configure_sign_in_params, only: [:create]
 
   # GET /resource/sign_in

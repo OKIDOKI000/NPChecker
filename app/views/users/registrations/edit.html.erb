@@ -1,5 +1,9 @@
+<% content_for :title do %>
+  <%= t('.title') %>
+<% end %>
+
 <div class="border border-primary-c">
-  <h2><%= t('.title', :resource => resource_class.model_name.human) %></h2>
+  <h2><%= t('.p_title', :resource => resource_class.model_name.human) %></h2>
 
   <%= form_with(model: resource, scope: resource_name, url: registration_path(resource_name), html: { method: :put }, local: true) do |f| %>
     <%= render "users/shared/error_messages", model: resource %>
