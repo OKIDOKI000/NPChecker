@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_12_044030) do
+ActiveRecord::Schema.define(version: 2021_10_14_004042) do
 
   create_table "products", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2021_10_12_044030) do
     t.datetime "entry_time", null: false
     t.integer "rank"
     t.string "link"
-    t.index ["entry_time"], name: "index_products_on_entry_time", unique: true
+    t.integer "price"
     t.index ["name"], name: "index_products_on_name", unique: true
   end
 

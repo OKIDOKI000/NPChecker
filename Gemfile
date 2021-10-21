@@ -38,6 +38,8 @@ gem 'devise-bootstrap-views', '~> 1.0'
 gem 'data-confirm-modal'
 # Accept-Languageからのlocale変更を可能にする
 gem 'http_accept_language'
+# gem 'clockwork'
+gem 'clockwork'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
