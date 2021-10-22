@@ -51,3 +51,23 @@
 .field_with_errors {
   display: contents;
 }
+
+.home-main {
+  height: 80vh;
+  background-image: url("/home_image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  h1 {
+    text-align:center;
+    padding:20vh 20vh 0 20vh;
+    color: white;
+    text-shadow: 5px 5px 20px rgba(255,255,0,1);
+  }
+  h2 {
+    text-align:center;
+    padding:0 20vh 20vh 20vh;
+    color: white;
+    text-shadow: 5px 5px 20px rgba(255,255,0,1);
+  }
+}

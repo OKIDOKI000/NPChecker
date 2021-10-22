@@ -2,181 +2,183 @@ ja:
   activerecord:
     attributes:
       user:
-        confirmation_sent_at: "パスワード確認送信時刻"
-        confirmation_token: "パスワード確認用トークン"
-        confirmed_at: "パスワード確認時刻"
-        created_at: "作成時刻"
-        current_password: "現在のパスワード"
-        current_sign_in_at: "現在のログイン時刻"
-        current_sign_in_ip: "現在のログインIPアドレス"
-        email: "Eメールアドレス"
-        encrypted_password: "暗号化パスワード"
-        failed_attempts: "失敗したログイン試行回数"
-        image_data: "プロフィール画像"
-        image_name: "プロフィール画像名"
-        last_sign_in_at: "最終ログイン時刻"
-        last_sign_in_ip: "最終ログインIPアドレス"
-        locked_at: "ロック時刻"
-        name: "名前"
-        password: "パスワード"
-        password_confirmation: "確認用パスワード"
-        remember_created_at: "ログイン記憶時刻"
-        remember_me: "ログインを記憶する"
-        reset_password_sent_at: "パスワードリセット送信時刻"
-        reset_password_token: "パスワードリセット用トークン"
-        sign_in_count: "ログイン回数"
-        unconfirmed_email: "未確認Eメール"
-        unlock_token: "ロック解除用トークン"
-        updated_at: "更新時刻"
+        confirmation_sent_at: 'パスワード確認送信時刻'
+        confirmation_token: 'パスワード確認用トークン'
+        confirmed_at: 'パスワード確認時刻'
+        created_at: '作成時刻'
+        current_password: '現在のパスワード'
+        current_sign_in_at: '現在のログイン時刻'
+        current_sign_in_ip: '現在のログインIPアドレス'
+        email: 'Eメールアドレス'
+        encrypted_password: '暗号化パスワード'
+        failed_attempts: '失敗したログイン試行回数'
+        image_data: 'プロフィール画像'
+        image_name: 'プロフィール画像名'
+        last_sign_in_at: '最終ログイン時刻'
+        last_sign_in_ip: '最終ログインIPアドレス'
+        locked_at: 'ロック時刻'
+        name: '名前'
+        password: 'パスワード'
+        password_confirmation: '確認用パスワード'
+        remember_created_at: 'ログイン記憶時刻'
+        remember_me: 'ログインを記憶する'
+        reset_password_sent_at: 'パスワードリセット送信時刻'
+        reset_password_token: 'パスワードリセット用トークン'
+        sign_in_count: 'ログイン回数'
+        unconfirmed_email: '未確認Eメール'
+        unlock_token: 'ロック解除用トークン'
+        updated_at: '更新時刻'
     models:
-      user: "ユーザ"
-  app_name: "NPChecker"
+      user: 'ユーザ'
+  app_name: 'NPChecker'
   errors:
     messages:
-      already_confirmed: "は既に登録済みです。ログインしてください。"
+      already_confirmed: 'は既に登録済みです。ログインしてください。'
       confirmation_period_expired: "の期限が切れました。%{period} までに確認する必要があります。 新しくリクエストしてください。"
-      expired: "の有効期限が切れました。新しくリクエストしてください。"
-      image_file_size_too_large: "として設定できるのはファイルサイズ100KB未満です"
-      invalid_extension: "にはファイルタイプがJPEG(JPG)またはPNGのものを指定してください"
-      not_found: "は見つかりませんでした。"
-      not_locked: "はロックされていません。"
+      expired: 'の有効期限が切れました。新しくリクエストしてください。'
+      image_file_size_too_large: 'として設定できるのはファイルサイズ100KB未満です'
+      invalid_extension: 'にはファイルタイプがJPEG(JPG)またはPNGのものを指定してください'
+      not_found: 'は見つかりませんでした。'
+      not_locked: 'はロックされていません。'
       not_saved:
         one: "エラーが発生したため %{resource} は保存されませんでした。"
         other: "%{count} 件のエラーが発生したため %{resource} は保存されませんでした。"
-      password_not_complex: "が複雑性の要件を満たしていません（長さ：8-70文字、半角大文字・小文字・数字を全て含む）"
+      password_not_complex: 'が複雑性の要件を満たしていません（長さ：8-70文字、半角大文字・小文字・数字を全て含む）'
   home:
     index:
-      title: "NPChecker－トップページ"
+      title: 'NPChecker－トップページ'
+      text1: 'NPChecker'
+      text2: 'ECサイトからNintendo Switchの新商品情報を取得するツール'
   infos:
     messages:
-      password_complexity: "※要件　長さ：8-70文字、文字種：半角大文字・小文字・数字を全て含む"
+      password_complexity: '※要件　長さ：8-70文字、文字種：半角大文字・小文字・数字を全て含む'
   products:
     index:
-      title: "NPChecker－商品一覧"
+      title: 'NPChecker－商品一覧'
   users:
     confirmations:
-      confirmed: "メールアドレスが有効であることを確認できました。"
+      confirmed: 'メールアドレスが有効であることを確認できました。'
       new:
-        resend_confirmation_instructions: "アカウント確認メール再送"
-        title: "NPChecker－アカウント確認メール再送"
-      send_instructions: "アカウントの有効化について数分以内にメールでご連絡します。"
-      send_paranoid_instructions: "メールアドレスが登録済みの場合、本人確認用のメールが数分以内に送信されます。"
+        resend_confirmation_instructions: 'アカウント確認メール再送'
+        title: 'NPChecker－アカウント確認メール再送'
+      send_instructions: 'アカウントの有効化について数分以内にメールでご連絡します。'
+      send_paranoid_instructions: 'メールアドレスが登録済みの場合、本人確認用のメールが数分以内に送信されます。'
     failure:
-      already_authenticated: "すでにログインしています。"
-      inactive: "アカウントが有効化されていません。メールに記載された手順に従って、アカウントを有効化してください。"
+      already_authenticated: 'すでにログインしています。'
+      inactive: 'アカウントが有効化されていません。メールに記載された手順に従って、アカウントを有効化してください。'
       invalid: "%{authentication_keys}またはパスワードが違います。"
-      last_attempt: "もう一回誤るとアカウントがロックされます。"
-      locked: "アカウントはロックされています。"
+      last_attempt: 'もう一回誤るとアカウントがロックされます。'
+      locked: 'アカウントはロックされています。'
       not_found_in_database: "%{authentication_keys}またはパスワードが違います。"
-      timeout: "セッションがタイムアウトしました。もう一度ログインしてください。"
-      unauthenticated: "ログインもしくはアカウント登録してください。"
-      unconfirmed: "メールアドレスの本人確認が必要です。"
+      timeout: 'セッションがタイムアウトしました。もう一度ログインしてください。'
+      unauthenticated: 'ログインもしくはアカウント登録してください。'
+      unconfirmed: 'メールアドレスの本人確認が必要です。'
     mailer:
       confirmation_instructions:
-        action: "メールアドレスの確認"
+        action: 'メールアドレスの確認'
         greeting: "ようこそ、%{recipient}さん！"
-        instruction: "以下のリンクをクリックし、メールアドレスの確認手続を完了させてください。"
-        subject1: "[NPChecker] メールアドレス認証のお願い"
-        subject2: "[NPChecker] メールアドレス変更手続きのお願い"
+        instruction: '以下のリンクをクリックし、メールアドレスの確認手続を完了させてください。'
+        subject1: '[NPChecker] メールアドレス認証のお願い'
+        subject2: '[NPChecker] メールアドレス変更手続きのお願い'
       email_changed:
         greeting: "こんにちは、%{recipient}さん。"
         message: "メールアドレス（%{email}）の変更が完了しました。"
         message_unconfirmed: "メールアドレス（%{email}）が変更されたため、メールを送信しています。"
-        subject: "[NPChecker] メールアドレス変更の完了通知"
+        subject: '[NPChecker] メールアドレス変更の完了通知'
       from: "NPChecker <%{mail_address}>"
       password_change:
         greeting: "%{recipient}さん"
-        message: "パスワードの変更が完了しました。"
-        subject: "[NPChecker] パスワード変更の完了通知"
+        message: 'パスワードの変更が完了しました。'
+        subject: '[NPChecker] パスワード変更の完了通知'
       reset_password_instructions:
-        action: "パスワード変更"
+        action: 'パスワード変更'
         greeting: "こんにちは、%{recipient}さん。"
-        instruction1: "パスワード再設定の依頼を受けたため、メールを送信しています。以下のリンクからパスワードの再設定ができます。"
-        instruction2: "パスワード再設定の依頼をしていない場合、このメールは無視してください。"
-        instruction3: "パスワードの再設定は、上記リンクから新しいパスワードを登録するまで完了しません。"
-        subject: "[NPChecker] パスワードの再設定手続きのお願い"
+        instruction1: 'パスワード再設定の依頼を受けたため、メールを送信しています。以下のリンクからパスワードの再設定ができます。'
+        instruction2: 'パスワード再設定の依頼をしていない場合、このメールは無視してください。'
+        instruction3: 'パスワードの再設定は、上記リンクから新しいパスワードを登録するまで完了しません。'
+        subject: '[NPChecker] パスワードの再設定手続きのお願い'
       unlock_instructions:
-        action: "アカウントのロック解除"
+        action: 'アカウントのロック解除'
         greeting: "こんにちは、%{recipient}さん。"
-        instruction: "アカウントのロックを解除するには以下のリンクをクリックしてください。"
-        message: "ログイン失敗が繰り返されたため、アカウントはロックされています。"
-        subject: "[NPChecker] アカウントのロック解除手続きのお願い"
+        instruction: 'アカウントのロックを解除するには以下のリンクをクリックしてください。'
+        message: 'ログイン失敗が繰り返されたため、アカウントはロックされています。'
+        subject: '[NPChecker] アカウントのロック解除手続きのお願い'
     omniauth_callbacks:
       failure: "%{kind} アカウントによる認証に失敗しました。理由：（%{reason}）"
       success: "%{kind} アカウントによる認証に成功しました。"
     passwords:
       edit:
-        change_my_password: "パスワードを変更する"
-        change_your_password: "パスワードを変更"
-        confirm_new_password: "確認用新しいパスワード"
-        new_password: "新しいパスワード"
-        title: "NPChecker－パスワード変更"
+        change_my_password: 'パスワードを変更する'
+        change_your_password: 'パスワードを変更'
+        confirm_new_password: '確認用新しいパスワード'
+        new_password: '新しいパスワード'
+        title: 'NPChecker－パスワード変更'
       new:
-        forgot_your_password: "パスワードを忘れましたか？"
-        send_me_reset_password_instructions: "パスワードの再設定方法を送信する"
-        title: "NPChecker－パスワード再設定"
-      no_token: "このページにはアクセスできません。パスワード再設定メールのリンクからアクセスされた場合には、URL をご確認ください。"
-      send_instructions: "パスワードの再設定について数分以内にメールでご連絡します。"
-      send_paranoid_instructions: "メールアドレスが登録済みの場合、パスワード再設定用のメールが数分以内に送信されます。"
-      updated: "パスワードが正しく変更されました。"
-      updated_not_active: "パスワードが正しく変更されました。"
+        forgot_your_password: 'パスワードを忘れましたか？'
+        send_me_reset_password_instructions: 'パスワードの再設定方法を送信する'
+        title: 'NPChecker－パスワード再設定'
+      no_token: 'このページにはアクセスできません。パスワード再設定メールのリンクからアクセスされた場合には、URL をご確認ください。'
+      send_instructions: 'パスワードの再設定について数分以内にメールでご連絡します。'
+      send_paranoid_instructions: 'メールアドレスが登録済みの場合、パスワード再設定用のメールが数分以内に送信されます。'
+      updated: 'パスワードが正しく変更されました。'
+      updated_not_active: 'パスワードが正しく変更されました。'
     registrations:
-      destroyed: "アカウントを削除しました。またのご利用をお待ちしています。"
+      destroyed: 'アカウントを削除しました。またのご利用をお待ちしています。'
       edit:
-        are_you_sure1: "アカウント削除確認"
-        are_you_sure2: "本当にアカウントを削除してよろしいですか？"
-        cancel_my_account: "ユーザアカウント削除"
+        are_you_sure1: 'アカウント削除確認'
+        are_you_sure2: '本当にアカウントを削除してよろしいですか？'
+        cancel_my_account: 'ユーザアカウント削除'
         currently_waiting_confirmation_for_email: "%{email} の確認待ち"
-        delete_account: "削除"
-        image_file_change: "画像ファイル変更"
-        image_file_requirement: "※ファイルサイズ：100KB未満、形式：JPEG(JPG)かPNG"
-        leave_blank_if_you_don_t_want_to_change_it: "※空欄のままならば変更しません"
-        profile_image_file: "プロフィール画像"
-        stop_deleting: "中止"
+        delete_account: '削除'
+        image_file_change: '画像ファイル変更'
+        image_file_requirement: '※ファイルサイズ：100KB未満、形式：JPEG(JPG)かPNG'
+        leave_blank_if_you_don_t_want_to_change_it: '※空欄のままならば変更しません'
+        profile_image_file: 'プロフィール画像'
+        stop_deleting: '中止'
         p_title: "%{resource}情報編集"
-        title: "NPChecker－ユーザ情報編集"
-        unhappy: "気に入りません"
-        update: "更新"
-        verify_text: "アカウント削除する場合は「delete」と入力してください"
-        we_need_your_current_password_to_confirm_your_changes: "変更を反映するには現在のパスワードを入力してください"
+        title: 'NPChecker－ユーザ情報編集'
+        unhappy: '気に入りません'
+        update: '更新'
+        verify_text: 'アカウント削除する場合は「delete」と入力してください'
+        we_need_your_current_password_to_confirm_your_changes: '変更を反映するには現在のパスワードを入力してください'
       new:
-        sign_up: "アカウント登録"
-        title: "NPChecker－アカウント登録"
-      signed_up: "アカウント登録が完了しました。"
-      signed_up_but_inactive: "ログインするためには、アカウントを有効化してください。"
-      signed_up_but_locked: "アカウントがロックされているためログインできません。"
-      signed_up_but_unconfirmed: "本人確認用のメールを送信しました。メール内のリンクからアカウントを有効化させてください。"
-      update_needs_confirmation: "アカウント情報を変更しました。変更されたメールアドレスの本人確認のため、本人確認用メールより確認処理を行ってください。"
-      updated: "アカウント情報を変更しました。"
-      updated_but_not_signed_in: "アカウントは正常に更新されましたが、パスワードが変更されたため、再度ログインしてください。"
+        sign_up: 'アカウント登録'
+        title: 'NPChecker－アカウント登録'
+      signed_up: 'アカウント登録が完了しました。'
+      signed_up_but_inactive: 'ログインするためには、アカウントを有効化してください。'
+      signed_up_but_locked: 'アカウントがロックされているためログインできません。'
+      signed_up_but_unconfirmed: '本人確認用のメールを送信しました。メール内のリンクからアカウントを有効化させてください。'
+      update_needs_confirmation: 'アカウント情報を変更しました。変更されたメールアドレスの本人確認のため、本人確認用メールより確認処理を行ってください。'
+      updated: 'アカウント情報を変更しました。'
+      updated_but_not_signed_in: 'アカウントは正常に更新されましたが、パスワードが変更されたため、再度ログインしてください。'
     sessions:
       already_signed_out: 既にログアウト済みです。
       new:
-        sign_in: "ログイン"
-        title: "NPChecker－ログイン"
-      signed_in: "ログインしました。"
-      signed_out: "ログアウトしました。"
+        sign_in: 'ログイン'
+        title: 'NPChecker－ログイン'
+      signed_in: 'ログインしました。'
+      signed_out: 'ログアウトしました。'
     shared:
       header:
-        products: "商品一覧"
-        sign_in: "ログイン"
+        products: '商品一覧'
+        sign_in: 'ログイン'
         sign_in_user: "ログインユーザ：%{name}"
-        sign_out: "ログアウト"
-        sign_up: "アカウント登録"
-        top: "TOP"
+        sign_out: 'ログアウト'
+        sign_up: 'アカウント登録'
+        top: 'TOP'
       links:
-        back: "戻る"
-        didn_t_receive_confirmation_instructions: "アカウント確認のメールを受け取れなかった方はこちら"
-        didn_t_receive_unlock_instructions: "アカウントのロック解除方法のメールを受け取れなかった方はこちら"
-        forgot_your_password: "パスワードを忘れた方はこちら"
-        sign_in: "ログイン"
+        back: '戻る'
+        didn_t_receive_confirmation_instructions: 'アカウント確認のメールを受け取れなかった方はこちら'
+        didn_t_receive_unlock_instructions: 'アカウントのロック解除方法のメールを受け取れなかった方はこちら'
+        forgot_your_password: 'パスワードを忘れた方はこちら'
+        sign_in: 'ログイン'
         sign_in_with_provider: "%{provider}でログイン"
-        sign_up: "アカウント登録"
+        sign_up: 'アカウント登録'
       minimum_password_length: "※%{count}文字以上"
     unlocks:
       new:
-        resend_unlock_instructions: "アカウントのロック解除方法を再送する"
-        title: "NPChecker－アカウントロック解除"
-      send_instructions: "アカウントのロック解除方法を数分以内にメールでご連絡します。"
-      send_paranoid_instructions: "アカウントが見つかった場合、アカウントのロック解除方法を数分以内にメールでご連絡します。"
-      unlocked: "アカウントをロック解除しました。"
+        resend_unlock_instructions: 'アカウントのロック解除方法を再送する'
+        title: 'NPChecker－アカウントロック解除'
+      send_instructions: 'アカウントのロック解除方法を数分以内にメールでご連絡します。'
+      send_paranoid_instructions: 'アカウントが見つかった場合、アカウントのロック解除方法を数分以内にメールでご連絡します。'
+      unlocked: 'アカウントをロック解除しました。'
