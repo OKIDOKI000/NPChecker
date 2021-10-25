@@ -30,18 +30,14 @@ class Product < ApplicationRecord
       top_url = raw_top_url + num.to_s + "/"
       # テスト用コード
       #top_url = 'https://ranking.rakuten.co.jp/daily/565950/p=1'
-      #top_url = '/app/assets/test/scraping_test.html' # FIXME: テスト用コード
       #@il_log.debug "■■■top_url: #{top_url}"
       # MechanizeにてURLからHTMLを取得し、パースを阻害するJavascript関連のタグを削除。
       html = agent.get(top_url).body.gsub!(/<script.*?>/, "").gsub!(/<\/script>/, "")
-      #html = URI.open(top_url).read.gsub!(/<script.*?>/, "").gsub!(/<\/script>/, "") # FIXME: テスト用コード
       #puts html
       sleep(random.rand(2.0)+10) # FIXME: ループ稼働時には有効にする
       begin
         # ページを読み込み、アイテム名を配列として取得する。
         @top_page = Nokogiri::HTML.parse(html, nil, 'utf-8')
-        # 別メソッドで新商品をチェック
-        #check_items
         # 商品情報を取得し、DB未登録ならば登録。
         item_list = @top_page.xpath('//div[@class="rnkRanking_itemName"]').map do |c|
           iname = c.css('a').text

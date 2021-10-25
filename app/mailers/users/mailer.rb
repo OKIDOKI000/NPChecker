@@ -1,13 +1,18 @@
 class Users::Mailer < Devise::Mailer
+  # application_helperのヘルパーを使えるようにする
   helper :application
+  # URLヘルパーを使えるようにする
   include Devise::Controllers::UrlHelpers
-  default template_path: 'devise/mailer'
+  default template_path: 'users/mailer'
+
+  # 引数
+  #   record: user
+  #   token: トークン
+  #   opts: 追加オプション付きのhash。Subjectやfromなどのヘッダー情報を変更可能。
 
   def confirmation_instructions(record, token, opts={})
     # アカウント登録かメールアドレス変更か判定
     if record.unconfirmed_email.nil?
-      # record内にユーザ情報が格納されている
-      # opts属性を上書きすることで、Subjectやfromなどのヘッダー情報を変更可能。
       opts[:subject] = t('users.mailer.confirmation_instructions.subject1')
     else
       opts[:subject] = t('users.mailer.confirmation_instructions.subject2')
@@ -38,6 +43,19 @@ class Users::Mailer < Devise::Mailer
     opts[:subject] = t('users.mailer.unlock_instructions.subject')
     opts[:from] = t('users.mailer.from', mail_address: Rails.application.credentials.gmail[:address])
     super
+  end
+
+  def notice_np(user, nps)
+    @user = user
+    @nps = nps
+    m_from = t('users.mailer.from', mail_address: Rails.application.credentials.gmail[:address])
+    mail( subject: t('users.mailer.notice_np.subject'),
+          to: @user.email,
+          from: m_from,
+          reply_to: m_from,
+          template_path: 'users/mailer',
+          template_name: 'notice_np'
+        )
   end
 
 end

@@ -1,0 +1,12 @@
+<p><%= t('.greeting', recipient: @user.name) %></p>
+
+<p><%= t('.message') %></p>
+
+<% @nps.each do |np| %>
+  <p>==========<br>
+     <%= t('activerecord.attributes.product.name') + ":" + np.name %><br>
+     <%= t('activerecord.attributes.product.rank') + ":" + np.rank.to_s %><br>
+     <%= t('activerecord.attributes.product.price') + ":" + np.price.to_s %><br>
+     <%= t('activerecord.attributes.product.link') + ":" + np.link %><br>
+  </p>
+<% end %>

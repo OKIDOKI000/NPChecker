@@ -28,6 +28,14 @@ en:
         unconfirmed_email: 'unconfirmed_email'
         unlock_token: 'unlock_token'
         updated_at: 'updated_at'
+      product:
+        created_at: 'created_at'
+        entry_time: 'entry_time'
+        link: 'link'
+        name: 'name'
+        price: 'price(yen)'
+        rank: 'rank'
+        updated_at: 'updated_at'
     models:
       user: 'user'
   app_name: 'NPChecker'
@@ -86,6 +94,10 @@ en:
         message_unconfirmed: "Your email address (%{email}) has been changed."
         subject: '[NPChecker] Email Changed'
       from: "NPChecker <%{mail_address}>"
+      notice_np:
+        greeting: "Hello,%{recipient}."
+        message: "Here are today's new products."
+        subject: '[NPChecker] New product information notification'
       password_change:
         greeting: "%{recipient}"
         message: 'Your password has been changed.'
