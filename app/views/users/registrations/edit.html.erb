@@ -9,25 +9,6 @@
     <%= render "users/shared/error_messages", model: resource %>
 
     <div class="form-group row">
-      <div class="col-sm-2 col-form-label"><%= t('.profile_image_file') %></div>
-      <div class="col-sm-5 border border-success">
-        <% if current_user.image_name == "default_image.jpg" %>
-          <%= image_tag "default_image.jpg", class: "d-block mx-auto img-fluid" %>
-        <% else %>
-          <%= image_tag "/user_images/#{current_user.image_name}", class: "d-block mx-auto img-fluid" %>
-        <% end %>     
-      </div>
-    </div>
-
-    <div class="form-group row">
-      <%= f.label :image_data, t('.image_file_change'), class: "col-sm-2 col-form-label" %>
-      <div class="col-sm-5">
-        <%= f.file_field :image_data %>
-      </div>
-      <p class="help-block small"><%= t('.image_file_requirement') %></p>
-    </div>
-
-    <div class="form-group row">
       <%= f.label :name, t('activerecord.attributes.user.name'), class: "col-sm-2 col-form-label" %>
       <div class="col-sm-5">
         <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "form-control border-dark" %>

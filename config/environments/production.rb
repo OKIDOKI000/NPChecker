@@ -27,7 +27,8 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  #config.assets.compile = false
+  config.assets.compile = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
@@ -48,7 +49,8 @@ Rails.application.configure do
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
-
+  config.force_ssl = true
+    
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
   config.log_level = :debug
@@ -91,4 +93,38 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # クレデンシャル設定
+  if Rails.application.credentials.gmail.present?
+    mail_address = Rails.application.credentials.gmail[:address]
+    password = Rails.application.credentials.gmail[:password]
+  else
+    mail_address = 'admin@example.com'
+    password = 'password'
+  end
+
+  # メール設定
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      enable_starttls_auto: true,
+      address: "smtp.gmail.com",
+      port: 587,
+      user_name: mail_address,
+      password: password,
+      authentication: "plain"
+  }
+
+  # ログを1日ごとに分割
+  config.logger = Logger.new('log/development.log',
+                             'daily',
+                             10 * 1024 * 1024,
+                             datetime_format: '%Y-%m-%d %H:%M:%S'
+                             )
+
+  # ログフォーマットの設定
+  config.logger.formatter = proc { |severity, datetime, _progname, message|
+  "[#{datetime}] [#{severity}] -- #{message}\n"
+  }
+  
 end

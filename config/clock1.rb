@@ -19,7 +19,7 @@ module Clockwork
   end
 
   # 毎日、指定時間（24時間表記）が来たときにのみ実行。
-  every(1.day, 'midnight.job', :at => '13:19')
+  every(1.day, 'midnight.job', :at => '00:15')
 end
 
 #every(10.seconds, 'frequent.job')
