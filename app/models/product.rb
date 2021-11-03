@@ -2,11 +2,10 @@ class Product < ApplicationRecord
   validates :name, presence: true
   validates :entry_time, presence: true
 
-  def self.np_check
+  def self.np_check(et)
+    @et = et
     # ログファイル名に入れる現在日時を取得し、文字列に変換。
     ds = Time.current.strftime('%Y%m%d%H%M%S')
-    # entry_timeに入れる現在日時を取得し、文字列に変換。なぜかTime.currentでは正しい日時を取得できなかった。
-    @et = Time.zone.now.strftime('%Y/%m/%d %H:%M:%S')
     # ランダム時間待機用の変数を定義
     random = Random.new
     # ログオブジェクトを生成。'w'は同名ファイルがあれば上書き。'a'は指定ファイルに追記。

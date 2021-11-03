@@ -55,8 +55,9 @@ ja:
   home:
     index:
       title: 'NPChecker－トップページ'
-      text1: 'NPChecker'
-      text2: 'ECサイトからNintendo Switchの新商品情報を取得するツール'
+      text1: '－NPChecker－'
+      text2: 'ECサイトからNintendo Switchの新商品情報を取得し、'
+      text3: '毎日0:30頃にEメールで通知します。'
   infos:
     messages:
       password_complexity: '※要件　長さ：8-70文字、文字種：半角大文字・小文字・数字を全て含む'

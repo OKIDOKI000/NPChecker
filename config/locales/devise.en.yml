@@ -55,8 +55,9 @@ en:
   home:
     index:
       title: 'NPChecker - Top'
-      text1: 'NPChecker'
-      text2: 'Tool to retrieve information on new Nintendo Switch products from EC sites'
+      text1: '-NPChecker-'
+      text2: 'This system retrieves informations on new Nintendo Switch products from EC site,'
+      text3: 'and you will be notified by email every day around 0:30.'
   infos:
     messages:
       password_complexity: '*Requirement Length: 8-70 characters, Character type: All uppercase and lowercase letters and numbers'
