@@ -54,20 +54,23 @@
 
 .home-main {
   height: 80vh;
+  text-align: center;
+  padding: 20vh;
   background-image: url("/home_image.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  h1 {
-    text-align:center;
-    padding:20vh 20vh 0 20vh;
-    color: white;
-    text-shadow: 5px 5px 20px rgba(255,255,0,1);
-  }
-  h2 {
-    text-align:center;
-    padding:0 20vh 20vh 20vh;
-    color: white;
-    text-shadow: 5px 5px 20px rgba(255,255,0,1);
-  }
+}
+
+.c_shadow1 {
+  color: white;
+  font-weight: 150;
+  filter: drop-shadow(1px 1px 0px #FFD9D7);
+}
+
+.c_shadow2 {
+  display: inline-block;
+  color: white;
+  font-weight: 150;
+  background:#3b3b3b;
 }
