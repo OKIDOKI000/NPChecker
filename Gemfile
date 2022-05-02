@@ -1,13 +1,16 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-# アプリ作成時 ruby '2.6.5' 2022/05/02 '2.7.4'からアップデート
+# アプリ作成時 ruby '2.6.5'
+# 2022/05/02 '2.7.4'からアップデート
 ruby '2.7.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+# 2022/05/02 セキュリティ対策のため'~> 5.2.5'からアップデート
 gem 'rails', '~> 5.2.7'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+# 2022/05/02 セキュリティ対策のため'~> 3.11'からアップデート
+gem 'puma', '~> 5.6'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -24,6 +27,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use mechanize
 gem 'mechanize'
+# 2022/05/02 セキュリティ対策のため「nokogiri」を個別でバージョンアップ
+gem 'nokogiri', '~> 1.13'
 # ユーザー認証用のgemを追加
 gem 'devise'
 # Rails日本語化
