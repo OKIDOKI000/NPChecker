@@ -25,10 +25,10 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
-# Use mechanize
-gem 'mechanize'
+# Use mechanize 2022/06/11 セキュリティ対策のため'2.8.4'からアップデート
+gem 'mechanize', '>= 2.8.5'
 # 2022/05/02 セキュリティ対策のため「nokogiri」を個別でバージョンアップ
-gem 'nokogiri', '~> 1.13'
+gem 'nokogiri', '>= 1.13.6'
 # ユーザー認証用のgemを追加
 gem 'devise'
 # Rails日本語化
@@ -46,6 +46,8 @@ gem 'data-confirm-modal'
 gem 'http_accept_language'
 # gem 'clockwork'
 gem 'clockwork'
+# 2022/06/11 セキュリティ対策のため個別でバージョンアップ
+gem 'rack', '>= 2.2.3.1'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
